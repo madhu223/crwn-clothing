@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Homepage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
+import SignInAndSignUpPage from './pages/sign-in and sign-up/sign-in and sign-up.component';
 import Header from './componente/header/header.component';
 // const HomePage = (props) => {
 //   console.log(props);
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Homepage />} />
         <Route exact path='/shop' element={<ShopPage />} />
+        <Route exact path='/signin' element={<SignInAndSignUpPage />} />
         {/* <Route exact path='/' element={<HomePage />} />
         <Route exact path='/topics/:topicId' element={<TopicDetail />} /> */}
       </Routes>
